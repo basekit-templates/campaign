@@ -1,2 +1,4 @@
-# campaign
-Afilias Political Template
+Unite
+=========
+
+BaseKit Standard Theme
