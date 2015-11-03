@@ -59,13 +59,13 @@
 }
 
 .blogpostlist__read-more {
-	background-color: @color-swatch4;
+	background-color: @color-swatch3;
 	padding: 10px 20px;
 	color: @font-swatch7-color;
 	font-size: @font-swatch7-font-size;
 	&:hover {
 		text-decoration: none;
-		background-color: @color-swatch2;
+		background-color: lighten(@color-swatch3, 10%);
 		.transitions
 	}
 }
@@ -85,6 +85,18 @@
 // Blog Post List Footer
 .blogpostlist__post-footer {
 	text-align: left;
+}
+
+// Blog Post List Pagination
+
+.blogpostlist__pagination-item {
+    display: inline-block;
+    width: 49%;
+}
+
+.blogpostlist__pagination-item:nth-child(2) {
+    text-align: right;
+    float: right;
 }
 
 // Blog Post

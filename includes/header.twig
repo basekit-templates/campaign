@@ -11,7 +11,12 @@
         	{{widget('extendednavigation', 'extendednavigation', {"align":"right"})|raw}}
         </div>
         <div class="header-content">
-        	{{widget('clicktocall', 'clicktocalldefault', {})|raw}}
+        	{{widget('button', 'donate', {
+            'text': 'Donate',
+            'align': 'widget-align-center',
+            'action': 'external',
+            'target': '_blank'
+            })|raw}}
         </div>
     </div>
 </header>

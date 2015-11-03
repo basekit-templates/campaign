@@ -13,12 +13,19 @@
 // 1. #Header & Footer
 // -----------------------------
 
-.template-header,
+
+.template-header {
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
 .template-footer {
-	.flex-vert-center; // Mixin > Flexbox: Vertical Align Center Mixin
-	min-height: 50px;
-	background-color: @color-swatch4;
-	// Tablet: reduce height
+    .flex-vert-center; // Mixin > Flexbox: Vertical Align Center Mixin
+    min-height: 50px;
+    background-color: @color-swatch4;
+    // Tablet: reduce height
 }
 
 .template-footer .widget__social-icons ul li {
@@ -47,19 +54,19 @@
 
 .template-footer1 {
 	display: block;
-    background-image: image('/images/form-bg.png');
+    background-image: image('/images/footer-img.jpg');
     background-repeat: repeat;
-    background-position: left center;
+    background-position: center;
 	text-align: center;
-	color: @font-swatch4-color;
-	padding: 40px 0px;
+	color: @font-swatch9-color;
+	padding: 137px 0px;
 	// Change heading elements to white
 	h1, h2, h3, h4 {
-		color: @font-swatch4-color;
+		color: @font-swatch8-color;
 	}
 	// Lighten paragraph & link elements
 	p, a {
-		color: @font-swatch4-color;
+		color: @font-swatch9-color;
 		margin: 10px 0 0 0;
 	}
 	// Reset Twitter feed styles
@@ -78,7 +85,7 @@
 
 .template-footer2 {
 	min-height: 60px;
-	background-color: darken(@color-swatch4,5%);
+	background-color: @color-swatch3;
 	text-align: center;
 	color: @font-swatch8-color;
 	padding: 15px 20px 0 20px;
@@ -166,6 +173,9 @@ blockquote:before {
 	color: @color-swatch3;
 }
 
+.companyname, .feature-headline, .feature-strapline, .navigation-item .item-name {
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+}
 
 
 
@@ -179,9 +189,7 @@ blockquote:before {
 .form {
     padding: 10px 0;
     display: block;
-    background-image: image('/images/form-bg.png');
-    background-repeat: repeat;
-    background-position: left center;
+    background-color: darken(@color-swatch1, 7%);
     @media @tablet {
     	padding:10px 0 5px;
     }
@@ -221,16 +229,6 @@ blockquote:before {
 	}
 }
 
-// Widget Profile Sign Up Form
-.header-content .signupform__form-group {
-    .signupform__label {
-        display: none;
-    }
-    .signupform__form-body {
-        margin: 0 30px 0;
-    }
-}
-
 // Legend
 // ----------
 
@@ -251,10 +249,6 @@ legend {
 .signup-form__form label,
 .blog-search__form label {
 	padding: 0px 0px 10px 0px;
-}
-
-label {
-	display:none;
 }
 
 // Select
@@ -312,11 +306,11 @@ textarea,
 button, 
 .button {
     padding: 8px 20px;
-    background-color: @color-swatch4;
+    background-color: @color-swatch3;
     color: @font-swatch7-color;
     .transitions;
     &:hover {
-    	background-color: @color-swatch2;
+    	background-color: lighten(@color-swatch3,10%);
     }
 }
 
