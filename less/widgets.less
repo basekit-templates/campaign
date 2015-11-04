@@ -272,7 +272,7 @@
         text-align: center;
     }
     @media @mobile {
-        padding: 30px 10px;
+        padding: 10px;
     }
 }
 
@@ -385,6 +385,7 @@
     }
     @media @tablet {
         text-align: center;
+        padding: 10px 0 20px;
     }
     .signupform__legend, .signupform__form-body {
         padding: 0;
@@ -1291,11 +1292,15 @@ input.input[type=search],
     }
     .signupform__form-group {
         margin-bottom: 0;
+        @media @tablet {
+            text-align: center;
+        }
     }
     .signupform__input {
         display: inline-block;
         float: left; 
         width: 70%;
+        padding: 13px;
     }
     .button--submit {
         width: 30%;
@@ -1323,7 +1328,7 @@ input.input[type=search],
     }
     .signupform__form {
         @media @mobile {
-            padding: 20px 0 10px;
+            padding: 20px 0;
         }
     }
     a, p, h1, h2, h3, h4, h5 {
@@ -1331,6 +1336,9 @@ input.input[type=search],
     }
     .twitter__avatar {
         display: none;
+    }
+    .signupform__label {
+        color: @font-swatch4-color;
     }
 }
 
