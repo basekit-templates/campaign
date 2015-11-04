@@ -211,9 +211,9 @@
         position: relative;
         height: 700px;
         z-index: 0;
-        @media @tablet {
-            height: 100vh;
-        }
+    }
+    @media @mobile {
+        height: 100vh;
     }
 }
 
@@ -376,12 +376,22 @@
 .signupbar {
     background-color: darken(@color-swatch1, 7%);
     padding: 20px 0;
+    h1, h2, h3, h4, h5, a, p {
+        padding-bottom: 0;
+        color: @font-swatch4-color;
+    }
+    .map__embed-wrap {
+        width: 400px;
+    }
     @media @tablet {
         text-align: center;
     }
     .signupform__legend, .signupform__form-body {
         padding: 0;
         margin: 0;
+    }
+    .twitter__avatar {
+        display: none;
     }
     .signupform__form-body {
         display: -webkit-box;
@@ -412,7 +422,7 @@
         -webkit-align-items: center;
         -ms-flex-align: center;
         align-items: center;
-                @media @tablet {
+        @media @tablet {
             display: block;
         }
     }
@@ -420,7 +430,7 @@
         flex: 1 0 auto;
         padding-right: 10px;
         margin: 0;
-        @media @mobile {
+        @media @tablet {
             text-align: right;
         }
     }
@@ -462,9 +472,6 @@
         flex: 1 0 auto;
         margin-bottom: 0;
         @media @tablet {
-            display: block;
-        }
-        @media @mobile {
             display: inline-block;
         }
     }
@@ -484,9 +491,6 @@
         align-self: auto;
         margin-bottom: 0;
         @media @tablet {
-            display: block;
-        }
-        @media @mobile {
             display: inline-block;
         }
     }
@@ -512,14 +516,14 @@
     -ms-flex-align: center;
     align-items: center;
     padding: 0 5%;
-            @media @tablet {
-            display: block;
-        }
+    @media @tablet {
+        display: block;
+    }
 }
 
 .signupbar-left {
     flex: 1 1 auto;
-    padding-right: 45px;
+    padding-right: 30px;
     align-content: center;
     align-items: center;
     justify-content: center;
