@@ -1192,6 +1192,14 @@ input.input[type=search],
     }
 }
 
+.companyaddress__address {
+    display: inline-block;
+    p {
+        display: inline-block;
+        float: left;
+    }
+}
+
 //  #Header Profile
 //  --------------
 
@@ -1330,6 +1338,9 @@ input.input[type=search],
     .map__embed-wrap {
         margin-bottom: 20px;
         width: 300px;
+        @media @mobile {
+            min-width: 200px;
+        }
     }
     .signupform__legend {
         display: none;
@@ -1355,6 +1366,7 @@ input.input[type=search],
     }
     .signupform__label {
         color: @font-swatch4-color;
+        text-align: center;
     }
 }
 
