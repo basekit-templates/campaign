@@ -378,7 +378,7 @@
     padding: 20px 0;
     h1, h2, h3, h4, h5, a, p {
         padding-bottom: 0;
-        color: @font-swatch4-color;
+        color: @font-swatch4-color!important;
     }
     .map__embed-wrap {
         width: 400px;
@@ -1287,54 +1287,48 @@ input.input[type=search],
 
 .template-footer2 .profile__companystrapline {
     margin-bottom: 10px;
-}
-
-.template-footer2 .signupform__form-group {
-    margin-bottom: 0;
-}
-
-.template-footer2 .signupform__input {
-    display: inline-block;
-    float: left; 
-    width: 70%;
-}
-
-.template-footer2 .button--submit {
-    width: 30%;
-    display: inline-block;
-    padding: 8px 8px 7px 8px;
-}
-
-.template-footer2 .signupform__form {
-    padding: 20px 0 20px;
-    margin-bottom: 20px;
-}
-
-.template-footer2 .map__embed-wrap {
-    margin-bottom: 20px;
-}
-
-.template-footer2 .signupform__legend {
-    display: none;
-}
-
-.template-footer2 .signupform__form-body {
-    margin: 0 30px 0;
-}
-
-.template-footer2 .map__embed-wrap {
-    min-width: 300px;
-}
-
-.template-footer2 .profile__signupform {
-    @media @mobile {
-        text-align: center;
+    .signupform__form-group {
+        margin-bottom: 0;
     }
-}
-
-.template-footer2 .signupform__form {
-    @media @mobile {
-        padding: 20px 0 10px;
+    .signupform__input {
+        display: inline-block;
+        float: left; 
+        width: 70%;
+    }
+    .button--submit {
+        width: 30%;
+        display: inline-block;
+        padding: 8px 8px 7px 8px;
+    }
+    .signupform__form {
+        padding: 20px 0 20px;
+        margin-bottom: 20px;
+    }
+    .map__embed-wrap {
+        margin-bottom: 20px;
+        min-width: 300px;
+    }
+    .signupform__legend {
+        display: none;
+    }
+    .signupform__form-body {
+        margin: 0 30px 0;
+    }
+    .profile__signupform {
+        @media @mobile {
+            text-align: center;
+        }
+    }
+    .signupform__form {
+        @media @mobile {
+            padding: 20px 0 10px;
+        }
+    }
+    a, p, h1, h2, h3, h4, h5 {
+        padding-bottom: 0;
+    }
+    .twitter__avatar {
+        display: none;
     }
 }
 
