@@ -168,6 +168,14 @@
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     @media @tablet {
         -webkit-order: 4;
         -ms-flex-order: 4;
@@ -858,6 +866,10 @@
     &:hover {
         background-color: @color-swatch2;
     }
+}
+
+.responsiveslideshow .button--pagination {
+    padding: 5px 10px;
 }
 
 .slide-pagination {
