@@ -17,6 +17,9 @@
 	min-width: 140px;
 	margin: 0;
 	width: inherit;
+	@media @tablet {
+		padding: 10px;
+	}
 }
 
 
@@ -36,7 +39,16 @@
 
 // Navigation Link
 .navigation-item .item-name {
-	padding:5px 15px;
+	padding: 0;
+	margin: 5px 8px;
+	&:hover {
+		border-bottom: 2px solid @color-swatch1;
+		display: inline-block;
+		@media @tablet {
+			border-bottom: 0;
+			display: block;
+		}
+	}
 }
 
 .item-name {
@@ -45,6 +57,14 @@
 
 // Dropdown Menu
 // -------------
+
+.navigation-item.folder .item-name:hover {
+    border: 0px solid @color-swatch1;
+    padding: 0;
+    margin: 5px 8px;
+    display: block;
+}
+
 .navigation-item.folder {
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
@@ -73,12 +93,12 @@
 
 .navigation-list--children, 
 .default-page .navigation-list--children {
-	background-color:@color-swatch3;
+	background-color: @color-swatch3;
 	@media @tablet {
 		border-top: none;
 		position: relative;
 		top: 0;
-		background-color: @color-swatch3;
+		background-color: lighten(@color-swatch3, 5%);
 		.navigation-item:hover & {
 			display: none;
 		}
@@ -97,6 +117,10 @@
 // Selected nav item
 .navigation-item.selected > .item-name { 
 	color: @font-swatch6-color-hover;
+	border-bottom: 2px solid @color-swatch1;
+	@media @tablet {
+		border-bottom: 0;
+	}
 }
 
 .extendednavigation li.selected a, 
@@ -168,4 +192,63 @@
 			}
 		}
 	}
+}
+
+// Mobile Donate Button
+
+.navigation-body,
+.template-header [data-widget-type="button"] {
+	@media @tablet {
+		display: none;
+	}
+}
+
+.open {
+	.navigation-body,
+	[data-widget-type="button"] {
+		@media @tablet {
+			display: block;
+		}
+	}
+}
+
+.header-extendednavigation {
+	display: flex;
+	@media @tablet {
+		display: block;
+	    margin-top: 35px;
+	    position: relative;
+	    z-index: 999;
+	}
+}
+
+.open .header-extendednavigation {
+	background-color: @color-swatch3;
+	padding-bottom: 20px;
+}
+
+.template-header [data-widget-type="button"] {
+	margin-left: 10px;
+
+	.button {
+	    background-color: @color-swatch2;
+	    color: @font-swatch7-color;
+	    font-size: @font-swatch7-font-size;
+	    line-height: @font-swatch7-line-height;
+	    font-weight: @font-swatch7-font-weight;
+	    &:hover {
+	        background-color: lighten(@color-swatch2, 10%)
+	    }
+	}
+
+	@media @tablet {
+		margin: 20px 10px 0;
+	}
+}
+
+.navigation-toggle {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -30px;
 }

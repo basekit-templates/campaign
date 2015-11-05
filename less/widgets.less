@@ -1194,6 +1194,12 @@ input.input[type=search],
 
 .companyaddress__address {
     display: inline-block;
+    &:after {
+        content:",";
+    }
+    &:last-child:after {
+        display: none;
+    }
     p {
         display: inline-block;
         float: left;
