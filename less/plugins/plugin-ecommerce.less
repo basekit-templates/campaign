@@ -113,9 +113,9 @@
     float: right;
     width: 52%;
     padding: 12px;
-    background-color: @color-swatch4;
+    background-color: @color-swatch3;
     &:hover {
-        background-color: @color-swatch2;
+        background-color: lighten(@color-swatch3, 10%);
     }
 }
 
@@ -124,7 +124,7 @@
     width: 48%;
     background-color: @color-swatch2;
     &:hover {
-        background-color: @color-swatch4;
+        background-color: lighten(@color-swatch2, 10%);
     }
 }
 
@@ -329,7 +329,7 @@
 
 .ecomproductslist__fieldset--filters {
     float:left;
-    width: 60%;
+    width: 70%;
     @media @tablet {
         width:100%;
     }
@@ -337,7 +337,7 @@
 
 .ecomproductslist__fieldset--search {
     float: right;
-    width: 40%;
+    width: 30%;
     @media @tablet {
         float: initial;
         width:100%;
