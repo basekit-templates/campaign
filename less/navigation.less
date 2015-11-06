@@ -40,7 +40,7 @@
 // Navigation Link
 .navigation-item .item-name {
 	padding: 0;
-	margin: 5px 8px;
+	margin: 5px 10px;
 	&:hover {
 		border-bottom: 2px solid @color-swatch1;
 		display: inline-block;
@@ -66,7 +66,7 @@
 .navigation-item.folder .item-name:hover {
     border: 0px solid @color-swatch1;
     padding: 0;
-    margin: 5px 8px;
+    margin: 5px 10px;
     display: block;
 }
 
@@ -79,7 +79,7 @@
 	&:after {
 		font-family: 'FontAwesome', sans-serif;
 		display: inline-block;
-		margin-left: 0.8em;
+		margin-left: 0.4em;
 		-webkit-transition: all 0.2s ease;
 		-moz-transition: all 0.2s ease;
 		-o-transition: all 0.2s ease;
@@ -121,7 +121,7 @@
 
 // Selected nav item
 .navigation-item.selected > .item-name { 
-	border-bottom: 2px solid @color-swatch1;
+	border-bottom: 2px solid fade(@color-swatch1, 50%);
 	@media @tablet {
 		border-bottom: 0;
 	}

@@ -76,33 +76,33 @@
        "title": "EB Garamond, Georgia, serif",
         "font1": {
             "font-family": "\"EB Garamond\", \"Georgia\", serif",
-            "font-size": "32px",
+            "font-size": "36px",
             "font-weight": "300",
-            "line-height": "40px",
+            "line-height": "44px",
             "color": "@color-swatch4",
             "letter-spacing": "1px"
         },
         "font2": {
-            "font-family": "\"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
-            "font-size": "28px",
+            "font-family": "\"EB Garamond\", \"Georgia\", serif",
+            "font-size": "32px",
             "font-weight": "300",
-            "line-height": "36px",
+            "line-height": "30px",
             "color": "@color-swatch4",
             "letter-spacing": "1px"
         },
         "font3": {
             "font-family": "\"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
-            "font-size": "24px",
+            "font-size": "22px",
             "font-weight": "300",
-            "line-height": "32px",
+            "line-height": "30px",
             "color": "@color-swatch4",
             "letter-spacing": "1px"
         },
         "font4": {
             "font-family": "\"EB Garamond\", \"Georgia\", serif",
-            "font-size": "20px",
+            "font-size": "18px",
             "font-weight": "300",
-            "line-height": "28px",
+            "line-height": "26px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
@@ -137,9 +137,9 @@
         },
         "font8": {
             "font-family": "\"EB Garamond\", \"Georgia\", serif",
-            "font-size": "65px",
+            "font-size": "60px",
             "font-weight": "300",
-            "line-height": "75px",
+            "line-height": "70px",
             "color": "@color-swatch1",
             "letter-spacing": "3px"
         },
