@@ -17,10 +17,27 @@
 <div class="signupbar">
     <div class="container">
         <div class="signupbar-left">
-            {{widget('profile', 'signupformbar', { 'profileType':'form',    'form':'profile'})|raw}}
+            {{widget('tweet', 'tweetblog', {
+            'linkText': 'Tweet',
+            'tweetText': 'Checkout this blog',
+            'align': 'widget-align-left'
+            })|raw}}
+        </div>
+        <div class="signupbar-facebook">
+            {{widget('facebooklike', 'likebutton', {
+            text: 'FaceBook Like',
+            showFaces: 'true',
+            action: 'like',
+            colorscheme: 'light',
+            layout: 'standard',
+            height: '30',
+            font: 'arial',
+            locale: 'en_US',
+            thisUrl: 'www.mysite.com'
+            })|raw}}
         </div>
         <div class="signupbar-right">
-            {{widget('profile', 'socialiconsbar', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+            {{widget('profile', 'signupformbar', { 'profileType':'form',    'form':'profile'})|raw}}
         </div>
     </div>
 </div>
