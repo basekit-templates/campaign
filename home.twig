@@ -24,17 +24,14 @@
             })|raw}}
         </div>
         <div class="signupbar-facebook">
-            {{widget('facebooklike', 'likebutton', {
-            text: 'FaceBook Like',
-            showFaces: 'true',
-            action: 'like',
-            colorscheme: 'light',
-            layout: 'standard',
-            height: '30',
-            font: 'arial',
-            locale: 'en_US',
-            thisUrl: 'www.mysite.com'
-            })|raw}}
+
+{{widget('facebooklike', 'likebutton', {
+text: 'FaceBook Like',
+showFaces: 'false',
+action: 'like',
+colorscheme: 'light',
+layout: 'standard'
+})|raw}}
         </div>
         <div class="signupbar-right">
             {{widget('profile', 'signupformbar', { 'profileType':'form',    'form':'profile'})|raw}}
