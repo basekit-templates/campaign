@@ -540,11 +540,7 @@
 }
 
 .signupbar-left {
-    flex: 1 1 auto;
-    padding-right: 30px;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
+    padding-right: 10px;
     @media @tablet {
         display: block;
         padding-right: 0;
@@ -552,21 +548,15 @@
     }
 }
 
+.signupbar-facebook {
+    height: 20px;
+}
+
 .signupbar-right {
-    -webkit-box-ordinal-group: 2;
-    -moz-box-ordinal-group: 2;
-    -webkit-order: 1;
-    -ms-flex-order: 1;
-    order: 1;
-    -webkit-box-flex: 0;
-    -moz-box-flex: 0;
-    -webkit-flex: 0 1 auto;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
-    align-self: auto;
-            @media @tablet {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    @media @tablet {
             display: block;
         }
 }
