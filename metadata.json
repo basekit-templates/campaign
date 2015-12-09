@@ -7,7 +7,7 @@
         "es": ["organización", "caridad", "recaudador de fondos", "fondo", "donación", "turism", "evento", "vacaciones"],
         "pt": ["organização", "caridade", "fundraiser", "fundo", "doação", "turismo", "evento", "fauna"]
     },
-    "pageTypes":["home"],
+    "pageTypes":["home", "donate"],
     "templateType":"standard",
     "widgetVersion":2,
     "images":[
