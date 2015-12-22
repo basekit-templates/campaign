@@ -545,15 +545,27 @@
     @media @tablet {
         display: block;
         padding-right: 0;
-        margin-bottom: 20px;
-        width: 50%;
+        width: 10%;
+        display: block;
         display: inline-block;
-        float: left;
+        vertical-align: middle;
+    }
+    @media @mobile {
+        width: 20%;
     }
 }
 
 .signupbar-facebook {
     height: 20px;
+    @media @tablet {
+        padding-right: 0;
+        width: 11%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    @media @mobile {
+        width: 26%;
+    }
 }
 
 .signupbar-right {
