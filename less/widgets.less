@@ -542,6 +542,9 @@
 
 .signupbar-left {
     padding-right: 10px;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: flex-start;
     @media @tablet {
         display: block;
         padding-right: 0;
@@ -552,17 +555,12 @@
     }
 }
 
-.signupbar-facebook {
-    height: 20px;
-    @media @tablet {
-        padding-right: 0;
-        width: 11%;
-        display: inline-block;
-        vertical-align: middle;
-    }
-    @media @mobile {
-        width: 26%;
-    }
+.twitter-button {
+    margin-right: 10px;
+}
+
+.facebook-button {
+    margin-top: 5px;
 }
 
 .signupbar-right {
