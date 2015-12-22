@@ -14,11 +14,18 @@
 // -----------------------------
 
 
-.template-header {
+[data-widget-type="feature"] + .template-header {
+    background-color: transparent;
     position: absolute;
     top: 0;
     z-index: 9999;
     width: 100%;
+}
+
+.template-header,
+[data-widget-type="feature"].bk-tpl-hidden + .template-header {
+    background-color: @color-swatch3;
+    position: relative;
 }
 
 .template-footer {
@@ -151,7 +158,7 @@
 // Colour Swatches
 // ---------------
 
-// @color-swatch1: Background 
+// @color-swatch1: Background
 // @color-swatch2: Contrast
 // @color-swatch3: Buttons
 // @color-swatch4: Headings
@@ -222,7 +229,7 @@ blockquote:before {
 }
 
 // Form Group
-.form-group { 
+.form-group {
 	margin-bottom: 20px;
 	@media @mobile {
 		margin-bottom: 10px;
@@ -250,7 +257,7 @@ blockquote:before {
 // Legend
 // ----------
 
-legend { 
+legend {
 	width: 100%;
 	padding: 10px 30px 10px;
 	color: @font-swatch2-color;
@@ -321,7 +328,7 @@ textarea,
 // 4. #Buttons
 // -----------------------------
 
-button, 
+button,
 .button {
     padding: 8px 20px;
     background-color: @color-swatch3;
