@@ -266,8 +266,17 @@ legend {
     color: @font-swatch2-color;
     font-weight: @font-swatch2-font-weight;
     font-family: @font-swatch2-font-family;
+    @media @tablet {
+        font-size: bkscale(@font-swatch2-font-size,0.6);
+        line-height: bkscale(@font-swatch2-line-height,0.7);
+        max-width: 100%;
+        display: block;
+    }
     @media @mobile {
-    	padding: 10px 20px 0px;
+        font-size: bkscale(@font-swatch2-font-size,0.5);
+        line-height: bkscale(@font-swatch2-line-height,0.6);
+        max-width: 100%;
+        padding: 10px 20px 0px;
     }
 }
 
