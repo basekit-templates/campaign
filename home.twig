@@ -18,23 +18,27 @@
     <div class="container">
 
         <div class="signupbar-left">
-            {{widget('tweet', 'tweetblog', {
-            'linkText': 'Tweet',
-            'tweetText': 'Checkout this blog',
-            'align': 'widget-align-left'
-            })|raw}}
-            
-            {{widget('facebooklike', 'likebutton', {
-                text: 'FaceBook Like',
-                showFaces: 'true',
-                action: 'like',
-                colorscheme: 'light',
-                layout: 'standard',
-                height: '20',
-                font: 'arial',
-                locale: 'en_US',
-                thisUrl: 'www.mysite.com'
-            })|raw}}
+            <div class="twitter-button">
+                {{widget('tweet', 'tweetblog', {
+                'linkText': 'Tweet',
+                'tweetText': 'Checkout this blog',
+                'align': 'widget-align-left'
+                })|raw}}
+            </div>
+
+            <div class="facebook-button">
+                {{widget('facebooklike', 'likebutton', {
+                    text: 'FaceBook Like',
+                    showFaces: 'true',
+                    action: 'like',
+                    colorscheme: 'light',
+                    layout: 'standard',
+                    height: '20',
+                    font: 'arial',
+                    locale: 'en_US',
+                    thisUrl: 'www.mysite.com'
+                })|raw}}
+            </div>
         </div>
 
         <div class="signupbar-right">
