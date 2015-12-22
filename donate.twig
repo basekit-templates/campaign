@@ -10,6 +10,18 @@
         <!-- Page Content -->
         <section class="template-content container">
 
+            <div class="donate-content">
+
+                {{widget('pagetitle', 'title', {})|raw}}
+        
+                {{widget('content', 'sidebarcontent', {
+                    content: '<p>Lorem ipsum dolor sit amet...</p>'
+                })|raw}}
+        
+                {{widget('embed', 'embedwidget', {})|raw}}
+        
+            </div>
+
             <!-- Main Widet Zone -->
             {{zone('main')|raw}}
 
