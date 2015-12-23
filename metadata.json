@@ -2,11 +2,6 @@
     "name":"Campaign",
     "thumbnail":"campaign.png",
     "screenshot":"campaign-screenshot.jpg",
-    "tags": {
-        "en": ["organisation", "charity", "fundraiser", "fund", "donation", "tourism", "event", "holiday"],
-        "es": ["organización", "caridad", "recaudador de fondos", "fondo", "donación", "turism", "evento", "vacaciones"],
-        "pt": ["organização", "caridade", "fundraiser", "fundo", "doação", "turismo", "evento", "fauna"]
-    },
     "pageTypes":["home", "donate"],
     "templateType":"standard",
     "widgetVersion":2,
