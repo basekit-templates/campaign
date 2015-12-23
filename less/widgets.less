@@ -398,8 +398,10 @@
         color: @font-swatch4-color;
     }
     .map__embed-wrap {
-        width: 400px;
-    }
+        min-width: 280px;
+        width: 280px;
+        margin: 0px auto;
+    }   
     @media @tablet {
         text-align: center;
         padding: 10px 0 30px;
@@ -407,6 +409,9 @@
     .signupform__legend, .signupform__form-body {
         padding: 0;
         margin: 0;
+    }
+    .account-link {
+        background-color: transparent;
     }
     .twitter__avatar {
         display: none;
@@ -538,7 +543,7 @@
     padding: 0 5%;
     @media @tablet {
         display: block;
-        padding: 0 2%;
+        padding: 0 3%;
     }
 }
 
@@ -1468,12 +1473,10 @@ input.input[type=search],
         margin-bottom: 20px;
     }
     .map__embed-wrap {
-        margin-bottom: 20px;
-        width: 300px;
-        @media @mobile {
-            min-width: 200px;
-        }
-    }
+        min-width: 280px;
+        width: 280px;
+        margin: 0px auto;
+    } 
     .signupform__legend {
         display: none;
     }
@@ -1499,6 +1502,9 @@ input.input[type=search],
     .signupform__label {
         color: @font-swatch4-color;
         text-align: center;
+    }
+    .right {
+        min-width: 0!important;
     }
 }
 
